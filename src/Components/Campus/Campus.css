@@ -1,0 +1,44 @@
+.campus{
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.gallery img{
+    width:23%;
+    border-radius: 10px;
+}
+
+/* ....media-query..... */
+@media (max-width:800px){
+     .campus {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;    /* ✅ Center images on small screens */
+        gap: 10px;                  /* ✅ Better spacing than margin-bottom */
+    }
+
+    .gallery img {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+
+    .campus .btn {
+        width: 50%; 
+        margin: 0 auto;               
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        margin-top: 20px;
+    }
+}
